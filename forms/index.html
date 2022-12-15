@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Форми</title>
+	</head>
+	<body>
+		<form action="https://fom.in.ua/echo" method="POST">
+			<fieldset>
+				<legend>Базові інпути</legend>
+
+				<div>
+					<label for="login">
+						Логін<span style="color: red">*</span>:
+						<input type="text" name="login" id="login" placeholder="Логін" />
+					</label>
+				</div>
+				<div>
+					<label for="password">
+						Пароль<span style="color: red">*</span>:
+						<input type="password" name="password" id="password" placeholder="Пароль" />
+					</label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Радіо</legend>
+
+				<div>
+					<label for="radio1">
+						Жінка:
+						<input type="radio" name="radio" id="radio1" value="woman" checked />
+					</label>
+				</div>
+				<div>
+					<label for="radio2">
+						Чоловік:
+						<input type="radio" name="radio" id="radio2" value="man" />
+					</label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Чекбокс</legend>
+
+				<label for="checkbox" >
+					Приймаю договір користувача:
+					<input type="checkbox" name="checkbox" id="checkbox" />
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Інші інпути</legend>
+
+				<div>
+					<label for="range">
+						Оберіть рівень гучності:
+						<input type="range" name="range" id="range" value="70" />
+					</label>
+				</div>
+				<div>
+					<label for="color">
+						Оберіть колір:
+						<input type="color" name="color" id="color" value="#00ff00" />
+					</label>
+				</div>
+				<div>
+					<label for="date">
+						Оберіть дату:
+						<input type="date" name="date" id="date" />
+					</label>
+				</div>
+				<div>
+					<label for="file">
+						Завантажте файл:
+						<input type="file" name="file" id="file" multiple />
+					</label>
+				</div>
+				<div>
+					<label for="email">
+						Введіть email-адресу:
+						<input type="email" name="email" id="email" placeholder="test@gmail.com" />
+					</label>
+				</div>
+				<div>
+					<label for="tel">
+						Введіть номер телефону:
+						<input type="tel" name="tel" id="tel" placeholder="+123456789" />
+					</label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Велике текстове поле</legend>
+
+				<label for="textarea">
+					<div>Введіть повний текст вашого повідомлення:</div>
+					<textarea
+						name="textarea"
+						id="textarea"
+						placeholder="Введіть повний текст вашого повідомлення"
+					></textarea>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Випадаючий список</legend>
+
+				<label for="select1">
+					<div>Оберіть тип кузова:</div>
+
+					<select name="select1" id="select1">
+						<option value="1">Седан</option>
+						<option value="2" disabled>Хетчбек</option>
+						<option value="3" selected>Купе</option>
+					</select>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Випадаючий список з можливістю обрати декілька опцій</legend>
+
+				<label for="select2">
+					<div>Оберіть тип палива:</div>
+
+					<select name="select2" id="select2" multiple>
+						<option value="4">Бензин</option>
+						<option value="5">Газ</option>
+						<option value="6">Дизель</option>
+					</select>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Кнопки</legend>
+
+				<div><button disabled>Ця кнопка не спрацює</button></div>
+				<div><button type="submit">Ця кнопка відправить форму</button></div>
+				<div><button type="reset">Ця кнопка очистить форму</button></div>
+			</fieldset>
+		</form>
+	</body>
+</html>
