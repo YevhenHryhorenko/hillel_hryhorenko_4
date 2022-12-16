@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Search</title>
+	</head>
+	<body>
+		<form action="https://fom.in.ua/echo" method="post">
+			<fieldset>
+				<legend>Choose a type of car body(bodies):</legend>
+
+				<label for="type_car_body">
+					<select name="typeOfCarBody" id="type_car_body">
+						<option value="Hatchback">Hatchback</option>
+						<option value="Sedan">Sedan</option>
+						<option value="Coupe">Coupe</option>
+						<option value="Jeep" selected>Jeep</option>
+						<option value="Van">Van</option>
+					</select>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Choose a car brand(brands):</legend>
+
+				<label for="car_brand">
+					<select name="carBrand" id="car_brand">
+						<option value="BMW">BMW</option>
+						<option value="Ferrari">Ferrari</option>
+						<option value="Toyota" selected>Toyota</option>
+						<option value="Jeep">Jeep</option>
+						<option value="Ford">Ford</option>
+						<option value="Porshe">Porshe</option>
+						<option value="Honda">Honda</option>
+						<option value="Subaru">Subaru</option>
+					</select>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Choose a producing country(countries):</legend>
+
+				<label for="producing_country">
+					<select name="producingCountry" id="producing_country">
+						<option value="Ukraine">Ukraine</option>
+						<option value="Poland">Poland</option>
+						<option value="USA" selected>USA</option>
+						<option value="United Kingdom">United Kingdom</option>
+						<option value="Ford">Ford</option>
+						<option value="Porshe">Porshe</option>
+						<option value="Honda">Honda</option>
+						<option value="Subaru">Subaru</option>
+					</select>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Cost(from-to):</legend>
+
+				<div>
+					<label for="from_range">
+						From<span style="color: red"> *</span>:
+						<input
+							type="number"
+							name="costFrom"
+							id="from_range"
+							placeholder="From"
+							value="0"
+							required
+						/>
+					</label>
+				</div>
+				<div>
+					<label for="to_range">
+						To<span style="color: red"> *</span>:
+						<input
+							type="number"
+							name="costTo"
+							id="to_range"
+							placeholder="To"
+							value="10000000"
+							required
+						/>
+					</label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Year of manufacture(from-to)</legend>
+
+				<div>
+					<label for="from_year">
+						From<span style="color: red"> *</span>:
+						<input
+							type="number"
+							name="yearFrom"
+							id="from_year"
+							placeholder="From"
+							value="1885"
+							required
+						/>
+					</label>
+				</div>
+				<div>
+					<label for="to_year">
+						To<span style="color: red"> *</span>:
+						<input
+							type="number"
+							name="yearTo"
+							id="to_year"
+							placeholder="To"
+							value="2022"
+							required
+						/>
+					</label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Car condition</legend>
+
+				<label for="car_condition">
+					<select name="carCondition" id="car_condition" multiple>
+						<option value="Broken">Broken</option>
+						<option value="Uncleared">Uncleared</option>
+						<option value="In credit">In credit</option>
+						<option value="New" selected>New</option>
+						<option value="Used">Used</option>
+					</select>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Gasoline type</legend>
+
+				<label for="gasoline_type">
+					<select name="gasolineType" id="gasoline_type">
+						<option value="98">Super(98)</option>
+						<option value="95" selected>Premium(95)</option>
+						<option value="92">Regular(92)</option>
+						<option value="80">Normal(80)</option>
+					</select>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Type of gearboxes</legend>
+				<div>
+					<label for="manual_gearbox">
+						Manual gearbox:
+						<input
+							type="radio"
+							name="gearboxType"
+							id="manual_gearbox"
+							value="Manual"
+							checked
+						/>
+					</label>
+				</div>
+				<div>
+					<label for="automatic_gearbox">
+						Automatic gearbox:
+						<input
+							type="radio"
+							name="gearboxType"
+							id="automatic_gearbox"
+							value="Automatic"
+						/>
+					</label>
+				</div>
+				<div>
+					<label for="robotic_gearbox">
+						Robotic gearbox:
+						<input
+							type="radio"
+							name="gearboxType"
+							id="robotic_gearbox"
+							value="Robotic"
+						/>
+					</label>
+				</div>
+				<div>
+					<label for="variable_gearbox">
+						Variable(stepless) gearbox:
+						<input
+							type="radio"
+							name="gearboxType"
+							id="variable_gearbox"
+							value="Variable"
+						/>
+					</label>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Choose color</legend>
+
+				<label for="color">
+					Оберіть колір:
+					<input type="color" name="color" id="color" value="#000000" />
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Additions for comfort</legend>
+
+				<label for="comfort">
+					<select name="additionsForComfort" id="comfort" multiple>
+						<option value="Hatch">Hatch</option>
+						<option value="Leather interior" selected>Leather interior</option>
+						<option value="Climate control">Climate control</option>
+						<option value="Heated seats">Heated seats</option>
+					</select>
+				</label>
+			</fieldset>
+			<fieldset>
+				<div><button type="submit">Submit</button></div>
+				<div><button type="reset">Clean the form</button></div>
+			</fieldset>
+		</form>
+	</body>
+</html>
