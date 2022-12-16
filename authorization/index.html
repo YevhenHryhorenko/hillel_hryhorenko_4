@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Authorization</title>
+	</head>
+	<body>
+		<form action="https://fom.in.ua/echo" method="post">
+			<fieldset>
+				<label for="email">
+					Enter your email-address<span style="color: red"> *</span>:
+					<input
+						type="email"
+						name="email"
+						id="email"
+						placeholder="yourmail@gmail.com"
+						required
+					/>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<label for="password">
+					Enter your password<span style="color: red"> *</span>:
+					<input
+						type="password"
+						name="password"
+						id="password"
+						placeholder="Your password"
+						required
+					/>
+				</label>
+				<div>
+					<label for="checkbox">
+						Remember my password:
+						<input type="checkbox" name="rememberMe" id="checkbox" />
+					</label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<div><button type="submit">Submit</button></div>
+				<div><button type="reset">Clean the form</button></div>
+			</fieldset>
+		</form>
+	</body>
+</html>
